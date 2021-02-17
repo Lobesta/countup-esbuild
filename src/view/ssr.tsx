@@ -12,6 +12,7 @@ const Layout:React.FC<{children: React.ReactNode}> = ({children})=>{
             <div id="react-app-target">
                 {children}
             </div>
+            <script src="./static/client.js" />
         </body>
     </html>;
 };

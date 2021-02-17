@@ -6,5 +6,7 @@ app.get("/", (_req, res)=>{
     res.send(ssr());
 });
 
+app.use("/static", express.static("dist/static"));
+
 app.listen(3000);
 console.log("Server is listening on port 3000");
