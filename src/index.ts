@@ -1,8 +1,9 @@
 import express from "express";
+import ssr from "./view/ssr";
 const app = express();
 
 app.get("/", (_req, res)=>{
-    res.send("Hello, World!");
+    res.send(ssr());
 });
 
 app.listen(3000);
